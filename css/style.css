@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-/* Bold 700
-   SemiBold 600
-   ExtraBold 800
-   */
+/* 
+    Bold 700
+    SemiBold 600
+    ExtraBold 800
+*/
 
 *{
     margin: 0;
@@ -24,6 +25,11 @@ body{
 a{
     color: #DEDEDE;
     text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+a:hover{
+    opacity: 0.6;
 }
 
 .container{
@@ -60,4 +66,74 @@ a{
 .header__link {
     font-weight: 700;
     font-size: 18px;
+}
+
+
+.main {
+
+}
+
+.welcom {
+    margin-top: 160px;
+
+}
+
+.welcom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcom__desc {
+
+}
+
+.welcom__title {
+    width: 500px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 1.19;
+    color: #DEDEDE;
+}
+
+.welcom__text {
+    width: 395px;
+    margin-bottom: 88px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px 48px;
+    font-size: 18px;
+    color: #FFFFFF;
+    background-color: #9D9D9D;
+    border-radius: 4px;
+}
+
+.btn::before{
+    content: "";
+    background-image: url("/images/mail.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 21px;
+    height: 16px;
+}
+
+.welcom__btn {
+
+
+}
+
+.welcom__img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 129px;
+    margin-right: 105px;
 }
