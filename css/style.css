@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+img{
+    max-width: 100%;
+}
+
 body{
     font-family: "Manrope", sans-serif;
     color: #959595;      
@@ -68,11 +72,6 @@ a:hover{
     font-size: 18px;
 }
 
-
-.main {
-
-}
-
 .welcom {
     margin-top: 160px;
 
@@ -82,10 +81,6 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.welcom__desc {
-
 }
 
 .welcom__title {
@@ -123,11 +118,6 @@ a:hover{
     height: 16px;
 }
 
-.welcom__btn {
-
-
-}
-
 .welcom__img {
     width: 400px;
     height: 400px;
@@ -136,4 +126,72 @@ a:hover{
     object-position: center;
     margin-bottom: 129px;
     margin-right: 105px;
+}
+
+.works {
+    margin-top: 145px;
+}
+
+.works__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 26px;
+    margin-bottom: 80px;
+    background-color: transparent;
+    border: none;
+    font-family: 'Manrope';
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #DEDEDE;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.works__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.work {
+    position: relative;
+    height: 888px;
+}
+
+.work:nth-child(even){
+    position: relative;
+    top: 138px;
+}
+
+.work:hover{
+    opacity: 1;
+}
+
+.work__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.work__name {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s;
+}
+
+.work:hover .work__name{
+    opacity: 1;
 }
