@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header class="header">
         <div class="container">
             <a href="index.html" class="logo">
@@ -15,8 +16,8 @@
             </a>
             <nav class="header__nav">
                 <a href="#" class="header__link">Home</a>
-                <a href="#" class="header__link">Work</a>
-                <a href="#" class="header__link">Contact</a>
+                <a href="#works" class="header__link">Work</a>
+                <a href="#contact" class="header__link">Contact</a>
             </nav>
         </div>
     </header>
@@ -42,13 +43,12 @@
             </div>
         </section>
 
-        <section class="works">
+        <section class="works" id="works">
             <div class="container">
                 <button type="button" class="works__btn">
                     <img class="works__icon" src="/images/arrow.svg" alt="arrow">
                     Featured Work
                 </button>
-
                 <div class="works__wrapper">
                     <a href="#!" class="work">
                         <img class="work__img" src="/images/work1.jpg" alt="work img">
@@ -66,10 +66,69 @@
                         <img class="work__img" src="/images/work4.jpg" alt="work img">
                         <span class="work__name">Work 4</span>
                     </a>
-
                 </div>
             </div>
         </section>
+
+        <section class="projects">
+            <div class="container">
+                <h2 class="title projects__title">Visual Explorations</h2>
+                <div class="projects__wrapper">
+                    <img class="projects__img" src="/images/visual1.jpg" alt="visual1">
+                    <img class="projects__img" src="/images/visual2.jpg" alt="visual2">
+                    <img class="projects__img" src="/images/visual3.jpg" alt="visual3">
+                    <img class="projects__img" src="/images/visual4.jpg" alt="visual4">
+                    <img class="projects__img" src="/images/visual5.jpg" alt="visual5">
+                    <img class="projects__img" src="/images/visual6.jpg" alt="visual6">
+                </div>
+            </div>
+        </section>
+
+        <section class="projects projects--vertical">
+            <div class="container">
+                <h2 class="title projects__title">Personal Projects</h2>
+                <div class="projects__wrapper">
+                    <img class="projects__img" src="/images/project1.jpg" alt="project1">
+                    <img class="projects__img" src="/images/project2.jpg" alt="project2">
+                    <img class="projects__img" src="/images/project3.jpg" alt="project3">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <h2 class="title contact__title">Contact Me</h2>
+                <p class="contact__text">
+                    If you are looking to hire a product designer, 
+                    I’m currently available for freelance work
+                </p>
+                <a class="btn contact__btn" href="mailto:hi@yourname.com">hi@yourname.com</a>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__copy">Made by <span>Your Name</span> — Copyright 2021</p>
+            <div class="socials">
+                <a href="#!" class="socials__link">
+                    <img class="socials__img" src="/images/social1.svg" alt="social1">
+                </a>
+                <a href="#!" class="socials__link">
+                    <img class="socials__img" src="/images/social2.svg" alt="social2">
+                </a>
+                <a href="#!" class="socials__link">
+                    <img class="socials__img" src="/images/social3.svg" alt="social3">
+                </a>
+                <a href="#!" class="socials__link">
+                    <img class="socials__img" src="/images/social4.svg" alt="social4">
+                </a>
+                <a href="#!" class="socials__link">
+                    <img class="socials__img" src="/images/social5.svg" alt="social5">
+                </a>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
