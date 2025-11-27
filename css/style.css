@@ -282,3 +282,88 @@ a:hover{
     gap: 43px;
 }
 
+
+
+@media (max-width: 1100px){
+    .welcom__img{
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 950px){
+    .welcom .container{
+        flex-direction: column-reverse;
+    }
+    .welcom__title{
+        width: auto;
+    }
+    .welcom__text{
+        width: auto;
+    }
+
+    .welcom__desc{
+        text-align: center;
+    }
+
+    .works {
+        margin-top: 128px;
+    }
+
+    .work{
+        height: 600px;
+    }
+
+    .projects, .contact {
+        margin-top: 116px;
+    }
+}
+
+@media (max-width: 850px){
+    .projects__img {
+        width: 100%;
+        height: 366px;
+    }
+}
+
+@media (max-width: 780px){
+    .works__wrapper{
+        grid-template-columns: 1fr;
+        padding-top: 0;
+    }
+    .work:nth-child(odd) {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 700px){
+    .footer .container {
+        flex-direction: column-reverse;
+        gap: 35px;
+    }
+}
+
+@media (max-width: 525px){
+    .welcom__title {
+        font-size: 36px;
+    }
+
+    .welcom__text{
+        font-size: 18px;
+        margin-bottom: 48px;
+    }
+
+    .welcom__img {
+        width: 240px;
+        height: 240px;
+        margin-bottom: 64px;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+
+    .contact__text {
+        font-size: 18px;
+    }
+}
